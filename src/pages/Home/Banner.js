@@ -3,9 +3,9 @@ import electric from '../../images/banner/electric.jpg'
 
 const Banner = () => {
     return (
-        <div class="carousel w-full">
-            <div id="item1" class="carousel-item w-full">
-                <img src={electric} class="w-full h-screen" />
+        <div className="carousel w-full">
+            <div id="item1" className="carousel-item w-full">
+                <img src={electric} className="w-full h-2/5" />
             </div>
         </div>
     );

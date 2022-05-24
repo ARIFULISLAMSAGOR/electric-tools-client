@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Diagonal cutting",
+        "img": "https://static.grainger.com/rp/s/is/image/Grainger/10D206_AS01",
+        "description": "Diagonal cutting pliers are used for cutting wire and small pins in areas that cannot be reached by larger cutting tools",
+        "order": "20",
+        "Available": "200",
+        "price": "40"
+    },
+    {
+        "name": "Snap ring",
+        "img": "https://static.grainger.com/rp/s/is/image/Grainger/5CE35_AS02?hei=536&wid=536&$adapimg$=",
+        "description": "Retaining rings are typically made from carbon steel, stainless steel or beryllium copper and may feature",
+        "order": "30",
+        "Available": "250",
+        "price": "35"
+    },
+    {
+        "name": "Slip joint",
+        "img": "https://cdn3.volusion.com/csvry.aspxr/v/vspfiles/photos/RM-DS-2.5-SS-2.jpg",
+        "description": "Slip joints can be designed to allow continuous relative motion of two components or it can allow an adjustment",
+        "order": "40",
+        "Available": "300",
+        "price": "40"
+    },
+    {
+        "name": "Hammer drill",
+        "img": "https://m.media-amazon.com/images/I/71Ola+ttoPL._AC_SL1500_.jpg",
+        "description": "A hammer drill, also known as a percussion drill or impact drill, is a power tool used chiefly for drilling in hard materials",
+        "order": "20",
+        "Available": "185",
+        "price": "85"
+    },
+    {
+        "name": "Wire stipper",
+        "img": "https://res.cloudinary.com/rsc/image/upload/w_1024/C0663617-01",
+        "description": "A US-style simple manual wire stripper is a pair of opposing blades much like scissors or wire cutters",
+        "order": "10",
+        "Available": "225",
+        "price": "80"
+    },
+    {
+        "name": "Cable cutter",
+        "img": "https://m.media-amazon.com/images/I/51vfuMEkF8L._SL1008_.jpg",
+        "description": "Pacer wire and cable cutters are implemented in applications",
+        "order": "30",
+        "Available": "300",
+        "price": "50"
+    }
+]
