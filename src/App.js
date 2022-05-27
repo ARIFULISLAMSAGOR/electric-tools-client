@@ -14,6 +14,7 @@ import NotFound from './pages/NotFound';
 import Purchase from './pages/Purchase';
 import Navbar from './pages/Shared/Navbar';
 import { ToastContainer } from 'react-toastify';
+import MyPortFolio from './pages/Shared/MyPortFolio';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         {/* <Route path='/product/:productId' element={<Purchase></Purchase>}></Route> */}
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/portfolio' element={<MyPortFolio></MyPortFolio>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}>
           <Route index element={<MyOrder></MyOrder>}></Route>
           <Route path='reveiw' element={<Reveiw></Reveiw>}></Route>
