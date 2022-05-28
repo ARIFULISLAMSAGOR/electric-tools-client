@@ -4,7 +4,7 @@ import power from '../../images/banner/power.jpg'
 const ExtraSection = () => {
     return (
         <div>
-            <div class="hero min-h-screen bg-base-200 p-12 m-6">
+            <div class="hero min-h-screen bg-base-200 text-center  p-50 m-6">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <img src={power} class="max-w-sm rounded-lg shadow-2xl" />
                     <div>

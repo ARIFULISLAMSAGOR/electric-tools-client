@@ -4,7 +4,7 @@ import Blogs from './pages/Blogs';
 import Dashboard from './pages/Dashboard/Dashboard';
 import MyOrder from './pages/Dashboard/MyOrder';
 import MyProfile from './pages/Dashboard/MyProfile';
-import Reveiw from './pages/Dashboard/Reveiw';
+import Reveiw from './pages/Dashboard/AddReveiw';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,6 +15,7 @@ import Purchase from './pages/Purchase';
 import Navbar from './pages/Shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 import MyPortFolio from './pages/Shared/MyPortFolio';
+import AddReview from './pages/Dashboard/AddReveiw';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         <Route path='/portfolio' element={<MyPortFolio></MyPortFolio>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}>
           <Route index element={<MyOrder></MyOrder>}></Route>
-          <Route path='reveiw' element={<Reveiw></Reveiw>}></Route>
+          <Route path='reveiw' element={<AddReview></AddReview>}></Route>
           <Route path='profile' element={<MyProfile></MyProfile>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
