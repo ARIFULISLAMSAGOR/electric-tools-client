@@ -1,0 +1,40 @@
+.addProduct {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+
+}
+
+.form>input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form>textarea {
+    height: 90px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form>button {
+    height: 40px;
+    width: 100%;
+    background: #0D6EFD;
+    border: 1px solid lightgrey;
+    color: white;
+    font-weight: bold;
+}

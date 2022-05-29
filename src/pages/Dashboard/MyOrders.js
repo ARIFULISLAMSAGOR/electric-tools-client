@@ -3,11 +3,13 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import UseServices from '../hooks/useServices';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
     const [user] = useAuthState(auth);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const [services, setServices] = UseServices();
     useEffect(() => {
         if (user) {
             fetch(`http://localhost:5000/bookingP/${user.email}`, {
@@ -29,7 +31,22 @@ const MyOrders = () => {
         }
     }, [user])
 
-
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure')
+        if (proceed) {
+            const url = `http://localhost:5000/booking/${id}`
+            console.log(url);
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .Then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = services.filter(service => service._id !== id);
+                    setServices(remaining);
+                })
+        }
+    }
 
     return (
         <div>
@@ -44,6 +61,7 @@ const MyOrders = () => {
                             <th>Tools</th>
                             <th>quantity</th>
                             <th>payment</th>
+                            <th>Remove</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -55,8 +73,9 @@ const MyOrders = () => {
                                 <td>{order.quantity}</td>
                                 <td>
                                     {(order.price && !order.paid) && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
-                                    {(order.price && order.paid) && <span className='btn-success'>Pay</span>}
+                                    {(order.price && order.paid) && <span className='btn-success'>paid</span>}
                                 </td>
+                                <td>{(order.price && !order.paid) && <button onClick={() => handleDelete(order._id)} className='btn btn-xs btn-success'>Delete</button>}</td>
                             </tr>)
                         }
 

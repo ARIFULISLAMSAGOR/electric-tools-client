@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Home/Product';
 import BookingModal from '../Home/BookingModal';
+import RequireAuth from '../Login/RequireAuth';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -21,10 +22,10 @@ const Products = () => {
                         key={product._id}></Product>)
                 }
             </div>
-            {orders && <BookingModal
+            {orders && <RequireAuth><BookingModal
                 orders={orders}
                 setOrders={setOrders}>
-            </BookingModal>}
+            </BookingModal></RequireAuth>}
         </div>
     );
 };

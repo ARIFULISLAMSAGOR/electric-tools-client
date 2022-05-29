@@ -64,7 +64,7 @@ const BookingModal = ({ orders, setOrders }) => {
                     <form onSubmit={handleOrders} className='grid grid-cols-1 gap-3 justify-items-center mt-5'>
                         <input type="text" name="name" disabled value={user?.displayName || ''} class="input input-bordered input-accent w-full max-w-xs" />
                         <input type="email" name="email" disabled value={user?.email || ''} class="input input-bordered input-accent w-full max-w-xs" />
-                        <input type="number" name="quantity" placeholder="Quantity" required class="input input-bordered input-accent w-full max-w-xs" />
+                        <input type="number" name="quantity" min={orders.order} max={orders.Available} placeholder="Quantity" required class="input input-bordered input-accent w-full max-w-xs" />
                         <input type="text" name="phone" placeholder="Phone Number" class="input input-bordered input-accent w-full max-w-xs" />
 
                         <input type="submit" value="submit" class="btn btn-secondary w-full max-w-xs" />

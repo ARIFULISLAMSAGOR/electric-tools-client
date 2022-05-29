@@ -4,10 +4,10 @@ import React from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import Loading from '../Shared/Loading';
-import CheckoutForm from './CheckoutForm';
+import CheckoutForm from '../Dashboard/CheckoutForm';
 
 
-const stripePromise = loadStripe('pk_test_51L3fLACBw0fwFCMKM8rhAHLpxdzMEhMrz0WuzXKnpcrlUT4ZoVNDah7NFfOKxU9ZCyn5WtIcitfdJ8rve5wVcXDf00FB4E0hdu');
+const stripePromise = loadStripe('pk_test_51L4OOwFE4wv54inCJWJ2BZ3NoNDmmg6qUgrE1hYdZLE87KX2mHE3T0BGaQu0Slg25Au1LEI8Au6XYhXQvibAPxqt003aktsh7u');
 const Payment = () => {
     const { id } = useParams();
 
