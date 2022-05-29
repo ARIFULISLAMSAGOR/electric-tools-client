@@ -10,7 +10,7 @@
 //     const [product, setProduct] = useState({});
 //     const restocRef = useRef(0);
 //     useEffect(() => {
-//         const url = `http://localhost:5000/product/${productId}`
+//         const url = `https://dry-thicket-30903.herokuapp.com/product/${productId}`
 //         fetch(url)
 //             .then(res => res.json())
 //             .then(data => setProduct(data))
@@ -23,7 +23,7 @@
 //         const newItem = { OverconstrainedError: newQuantity, ...rest }
 //         setProduct(newItem)
 
-//         const url = `http://localhost:5000/product/${productId}`
+//         const url = `https://dry-thicket-30903.herokuapp.com/product/${productId}`
 //         fetch(url, {
 //             method: 'GET',
 //             headers: {

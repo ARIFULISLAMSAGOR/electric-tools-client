@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import ProfileRow from './ProfileRow';
 
 const AllUsers = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://dry-thicket-30903.herokuapp.com/user', {
 
         method: 'GET',
         headers: {

@@ -12,7 +12,7 @@ const MyOrders = () => {
     const [services, setServices] = UseServices();
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/bookingP/${user.email}`, {
+            fetch(`https://dry-thicket-30903.herokuapp.com/bookingP/${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': ` Bearer ${localStorage.getItem('accessToken')}`
@@ -34,7 +34,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure')
         if (proceed) {
-            const url = `http://localhost:5000/booking/${id}`
+            const url = `https://dry-thicket-30903.herokuapp.com/booking/${id}`
             console.log(url);
             fetch(url, {
                 method: 'DELETE'

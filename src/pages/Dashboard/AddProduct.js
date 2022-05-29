@@ -11,7 +11,7 @@ const AddProduct = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        const url = 'http://localhost:5000/AddService'
+        const url = 'https://dry-thicket-30903.herokuapp.com/AddService'
         fetch(url, {
             method: "POST",
             headers: {

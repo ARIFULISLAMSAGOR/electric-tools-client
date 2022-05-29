@@ -12,7 +12,7 @@ const AddReview = () => {
         }
         console.log(register)
 
-        fetch("http://localhost:5000/reviews", {
+        fetch("https://dry-thicket-30903.herokuapp.com/reviews", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
