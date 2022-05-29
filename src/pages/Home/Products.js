@@ -13,7 +13,7 @@ const Products = () => {
     }, [])
     return (
         <div >
-            <h2 className='text-center text-primary text-3xl mt-[-750px]'>Electric tools part</h2>
+            <h2 className='text-center text-primary text-3xl lg:mt-[-750px]'>Electric tools part</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 services-container'>
                 {
                     products.map(product => <Product

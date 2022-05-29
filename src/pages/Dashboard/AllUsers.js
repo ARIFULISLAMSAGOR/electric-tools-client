@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 import ProfileRow from './ProfileRow';
 
-const MyProfile = () => {
+const AllUsers = () => {
     const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
 
         method: 'GET',
@@ -46,4 +46,4 @@ const MyProfile = () => {
     );
 };
 
-export default MyProfile;
+export default AllUsers;

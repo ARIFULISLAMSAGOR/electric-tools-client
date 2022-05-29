@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Blogs from './pages/Blogs';
 import Dashboard from './pages/Dashboard/Dashboard';
-import MyProfile from './pages/Dashboard/MyProfile';
 import Reveiw from './pages/Dashboard/AddReveiw';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
@@ -19,6 +18,8 @@ import Payment from './pages/Dashboard/Payment';
 import Reviews from './pages/Reveiw/Reveiws';
 import MyOrders from './pages/Dashboard/MyOrders';
 import AddProduct from './pages/Dashboard/AddProduct';
+import RequireAdmin from './pages/RequireAdmin';
+import AllUsers from './pages/Dashboard/AllUsers';
 
 function App() {
   return (
@@ -35,9 +36,9 @@ function App() {
         <Route path='/dashboard' element={<Dashboard></Dashboard>}>
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path='reveiw' element={<AddReview></AddReview>}></Route>
-          <Route path='addProduct' element={<AddProduct></AddProduct>}></Route>
+          <Route path='addProduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
           <Route path='payment/:id' element={<Payment></Payment>}></Route>
-          <Route path='profile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='profile' element={<AllUsers></AllUsers>}></Route>
 
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
