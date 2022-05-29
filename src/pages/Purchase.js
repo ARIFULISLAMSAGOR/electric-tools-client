@@ -50,23 +50,4 @@
 //                 <p>Order:{product.order}</p>
 //                 <p>Available price:{product.Available}</p>
 //                 <p>{product.description}</p>
-//                 <button className='text-center btn-primary px-4 py-2'>Purchase</button>
-
-//                 <form className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
-
-//                     <input ref={restocRef} type="number" name="number" placeholder="add number" class="input input-bordered w-full max-w-xs" />
-//                     <input onClick={() => handleRestok(product._id)} type="submit" value="Submit" class="btn btn-secondary w-full max-w-xs" />
-//                 </form>
-
-
-//                 {/* <form className='w-50 mx-auto '>
-//                     <input ref={restocRef} type="number" placeholder='add numbers' name="number" id="" />
-//                     <input onClick={() => handleRestok(product._id)} type="button" value="restok the items" />
-//                 </form> */}
-//             </div>
-//         </div>
-//     );
-// };
-
-
-// export default Purchase;
+//  
