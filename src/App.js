@@ -9,7 +9,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Register from './pages/Login/Register';
 import RequireAuth from './pages/Login/RequireAuth';
 import NotFound from './pages/NotFound';
-import Purchase from './pages/Purchase';
 import Navbar from './pages/Shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 import MyPortFolio from './pages/Shared/MyPortFolio';
